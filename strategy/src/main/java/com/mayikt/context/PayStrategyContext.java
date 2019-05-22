@@ -1,5 +1,6 @@
 package com.mayikt.context;
 
+import com.mayikt.enums.PayStrategyEnum;
 import com.mayikt.strategy.PayStrategy;
 import com.mayikt.utils.SpringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,12 +23,8 @@ public class PayStrategyContext {
     private SpringUtils springUtils;
 
     public String toPayHtml(String payCode) {
-        // 1.使用payCode参数查询数据库获取beanid
-        Map<String, String> map = new HashMap<>();
-        map.put("aliPay", "aliPayStrategy");
-        map.put("yinlianPay", "yinlianPayStrategy");
-
-        PayStrategy payStrategy = SpringUtils.getBean(map.get(payCode), PayStrategy.class);
+        // 1.这里使用枚举，最好使用payCode参数查询数据库获取beanid
+        PayStrategy payStrategy = SpringUtils.getBean(PayStrategyEnum.get(payCode), PayStrategy.class);
         Assert.notNull(payStrategy, "payStrategy must not be null");
         return payStrategy.toPayHtml();
     }
