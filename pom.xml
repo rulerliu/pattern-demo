@@ -12,6 +12,7 @@
         <module>strategy</module>
         <module>chain</module>
         <module>common</module>
+        <module>template</module>
     </modules>
     <packaging>pom</packaging>
 

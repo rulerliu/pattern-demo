@@ -1,19 +1,16 @@
 package com.mayikt;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan(basePackages = "com.mayikt.mapper")
-public class AppHandler {
+public class AppStrategy {
 
     /**
-     * 127.0.0.1:9092/client
-     *
+     * 127.0.0.1:9091/toPayHtml?payCode=aliPay
      * @param args
      */
     public static void main(String[] args) {
-        SpringApplication.run(AppHandler.class);
+        SpringApplication.run(AppStrategy.class);
     }
 }
