@@ -13,6 +13,7 @@
         <module>chain</module>
         <module>common</module>
         <module>template</module>
+        <module>decorator</module>
     </modules>
     <packaging>pom</packaging>
 
