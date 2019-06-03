@@ -14,6 +14,7 @@
         <module>common</module>
         <module>template</module>
         <module>decorator</module>
+        <module>proxy</module>
     </modules>
     <packaging>pom</packaging>
 
