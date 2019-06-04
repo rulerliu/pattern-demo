@@ -17,6 +17,7 @@
         <module>proxy</module>
         <module>facade</module>
         <module>state</module>
+        <module>adapter</module>
     </modules>
     <packaging>pom</packaging>
 
