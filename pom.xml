@@ -16,6 +16,7 @@
         <module>decorator</module>
         <module>proxy</module>
         <module>facade</module>
+        <module>state</module>
     </modules>
     <packaging>pom</packaging>
 
