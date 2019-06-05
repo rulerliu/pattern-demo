@@ -18,6 +18,7 @@
         <module>facade</module>
         <module>state</module>
         <module>adapter</module>
+        <module>singleton</module>
     </modules>
     <packaging>pom</packaging>
 
